@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio Viba</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary-alt navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="bv-logo" src="assets/img/logo.svg" alt="Estudio Viba"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav d-flex justify-content-center w-100" style="gap: 2rem;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Más
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Acción</a></li>
+              <li><a class="dropdown-item" href="#">Otra acción</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mainCarousel" class="fullscreen-carousel carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="carousel-slide-0">
+        <div class="carousel-caption carousel-main-caption d-none d-md-block">
+          <img src="assets/img/main-title.svg" class="bv-main-title img-reponsive mb-4" alt="Estudio viba">
+          <p class="bv-primary">Investigaciones de Riesgo, Compliance y Debida Diligencia </p>
+        </div>
+      </div>
+      <div class="carousel-item" id="carousel-slide-1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="bv-titular bv-primary">Análisis de riesgo</h5>
+          <p class="bv-primary">Estudio y elaboración de análisis a la medida de su negocio, en materia financiera, legal y técnica.</p>
+          <p class="bv-primary">Proporcionamos informes elaborados a fin de mitigar los riesgos y contingencias que afronta su negocio.</p>
+        </div>
+      </div>
+      <div class="carousel-item" id="carousel-slide-2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="bv-titular bv-accent">Due Diligence</h5>
+          <p>Conozca mejor a sus potenciales clientes, socios y proveedores, para prevenir inconvenientes legales, fraudes y riesgos relacionados con el lavado de activos y financiación del terrorismo. Contamos con investigadores especializados en materia contable, jurídica y de seguridad de la información.</p>
+        </div>
+      </div>
+      <div class="carousel-item" id="carousel-slide-3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="bv-titular bv-secondary">Campañas de desprestigio y desinformación</h5>
+          <p>Si Usted o su empresa ha sido víctima de una campaña de difamación o desinformación en redes sociales, nos encargamos de investigar el origen, identificando a los responsables y llevando su caso ante la justicia.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container-fluid full-height" id="bv-quehacemos">
+    <div class="row full-height align-items-center">
+      <div class="col-12 align-self-start">
+        <h2 class="bv-section-title">Que hacemos</h2>
+      </div>
+      <div class="col-lg-5 align-self-start">
+        <div id="brainstorming" anchor="brainstorming">
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Análisis de riesgo" data-bs-target="#otherCarousel" data-bs-slide-to="0"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Due diligence" data-bs-target="#otherCarousel" data-bs-slide-to="1"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Prevención de fraude" data-bs-target="#otherCarousel" data-bs-slide-to="2"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Programas de LA/FT" data-bs-target="#otherCarousel" data-bs-slide-to="3"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Recupero de activos" data-bs-target="#otherCarousel" data-bs-slide-to="4"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Derecho penal" data-bs-target="#otherCarousel" data-bs-slide-to="5"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Asesoría contable" data-bs-target="#otherCarousel" data-bs-slide-to="6"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Capacitaciones" data-bs-target="#otherCarousel" data-bs-slide-to="7"></a>
+          <a href="#" class="typing-link bv-titular bv-highlight" data-text="Desprestigio y desinformación" data-bs-target="#otherCarousel" data-bs-slide-to="8"></a>
+        </div>
+      </div>
+      <div class="col-lg-7 align-self-start">
+        <div id="otherCarousel" class="carousel slide carousel-dark">
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="bv-riesgo">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Análisis de riesgo</h1>
+                  <p>Estudio y elaboración de análisis a la medida de su negocio, en materia financiera, legal y técnica.</p>
+                  <p>Proporcionamos informes elaborados a fin de mitigar los riesgos y contingencias que afronta su negocio.</p>
+                  <button class="btn btn-lg btn-outline-primary" href="#">Enlace de prueba</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-diligence">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Due diligence</h1>
+                  <p>
+                    Conozca mejor a sus potenciales clientes, socios y proveedores, para prevenir inconvenientes legales, fraudes y riesgos relacionados con el lavado de activos y financiación del terrorismo. Contamos con investigadores especializados en materia contable, jurídica y de seguridad de la información.
+                  </p>
+                  <button class="btn btn-lg btn-outline-primary" href="#">Enlace de prueba</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-fraude">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Prevención de fraude</h1>
+                  <p>
+                    Desarrollamos estrategias integrales para protegerlo a Usted y a su negocio de fraudes. Asesoramiento en adquisiciones de real estate, obras de arte, aeronaves y embarcaciones
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-programas">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Programas de LA/FT</h1>
+                  <p>Elaboración de Programas y políticas de prevención de lavado de activos y de cumplimiento. Análisis y medición de efectividad de programas vigentes.</p>
+                  <p>Capacitación permanente en materia de cumplimiento e integridad, Conozca a su cliente (KYC) y prevención de delitos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-activos">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Investigación y recupero de activos</h1>
+                  <p>Desarrollamos estrategias integrales para protegerlo a Usted y a su negocio de delitos que perjudiquen su situación financiera o sus activos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-derechopenal">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Derecho penal</h1>
+                  <p>Consultoría, asesoramiento y representación en materia penal. Querellas y defensas en fuero provincial, nacional y federal. Responsabilidad penal empresaria. Litigio estratégico.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-asesoria">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Asesoría contable e impositiva</h1>
+                  <p>Testeo de desvalorización de activos; valuación de negocio; restructuración financiera; auditoría; plan de negocios y proyecciones de escenarios; selección e implementación de sistemas de gestión; Estrategia de Negocios; Plan de mejoras de gestión administrativo y financiero; Valuación y gestión de instrumentos financieros. Certificaciones y auditorías.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-capacitaciones">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Capacitaciones</h1>
+                  <p>Desarrollamos capacitaciones a la medida de su empresa en materia de integridad, trasparencia, cumplimiento, financiera, contable o jurídica. Modalidades online o presencial.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="bv-desprestigio">
+              <div class="wrap-container">
+                <div class="flowing-text">
+                  <h1>Desprestigio y desinformación</h1>
+                  <p>Si Usted o su empresa ha sido víctima de una campaña de difamación o desinformación en redes sociales, nos encargamos de investigar el origen, identificando a los responsables y llevando su caso ante la justicia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#otherCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#otherCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid full-height">
+    <div class="row justify-content-center full-height align-items-start">
+      <div class="col-12 align-self-start">
+        <h2 class="bv-section-title">Nosotros</h2>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="assets/img/slider-01.jpg" alt="Martin Vignale" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Martin Vignale</h3>
+            <p class="card-text">Abogado. Especialista en Compliance y Prevención de Lavado de Activos. Experiencia en el sector público y privado.</p>
+            <button class="btn btn-lg btn-primary" href="#">Ver perfil</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="assets/img/slider-01.jpg" alt="Martin Vignale" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Federico Bazzani</h3>
+            <p class="card-text">Abogado. Especialista en Compliance y Prevención de Lavado de Activos. Experiencia en el sector público y privado.</p>
+            <button class="btn btn-lg btn-primary" href="#">Ver perfil</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-3 bg-primary-alt">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-light">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-light">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-light">Contacto</a>
+      </li>
+    </ul>
+    <p class="text-center text-light">© 2025 Estudio Viba</p>
+  </footer>
+
+  <!-- Código comentado -->
+  <!--
+  <div class="container-fluid">
+    <h1>Estudio Viba</h1>
+    <p>Estudio jurídico, legales y compliance</p>
+    <div>
+      <button class="btn btn-lg btn-primary" href="#">Enlace de prueba</button>
+      <button class="btn btn-lg btn-secondary" href="#">Enlace de prueba</button>
+      <button class="btn btn-lg btn-warning" href="#">Enlace de prueba</button>
+    </div>
+    <br>
+    <div>
+      <button class="btn btn-lg btn-outline-primary" href="#">Enlace de prueba</button>
+      <button class="btn btn-lg btn-outline-secondary" href="#">Enlace de prueba</button>
+      <button class="btn btn-lg btn-outline-warning" href="#">Enlace de prueba</button>
+    </div>
+    <br>
+  </div>
+
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-warning">
+    <span class="fw-bold">This is a callout.</span>We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
+  </div>
+  <div class="callout callout-primary">
+    <span class="fw-bold">This is a callout.</span>We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
+  </div>
+  <div class="callout callout-secondary">
+    <span class="fw-bold">This is a callout.</span>We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
+  </div>
+  -->
+
+  <a href="https://wa.me/549XXXXXXXXXX" class="whatsapp-button" target="_blank" title="Escribinos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="whatsapp-text">Escribinos</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
