@@ -1,7 +1,6 @@
 :root {
     --font-heading: 'Lustria', serif;
     --font-body: 'Mulish', sans-serif;
-}
 
 body {
   font-family: 'Mulish', sans-serif; /* Replaced Roboto Serif with Mulish */
